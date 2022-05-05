@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap");
+
+/* -- START GLOBAL SETTINGS CSS -- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Teko", sans-serif;
+}
+
+:root {
+  /* -- Start Background Colors -- */
+  --bg-color: rgb(23, 23, 25);
+  --bg-color-layout: rgb(31, 30, 30);
+  /* -- End Background Colors -- */
+
+  /* -- Start Houver Colors -- */
+  --houver-color-bg: rgb(151, 0, 0);
+  --houver-color: black;
+  /* -- End Houver Colors -- */
+
+  --text-color: white;
+  --span: red;
+  --border: white;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* -- END GLOBAL SETTINGS CSS -- */
+
+/* -- START NAV SECTION CSS -- */
+
+#navbar {
+  display: flex;
+  position: fixed;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+#navbar span {
+  margin-left: 9px;
+}
+
+#navbar p {
+  display: flex;
+  font-size: 25px;
+  margin: 2px 20px;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+#navbar ul {
+  display: flex;
+  margin-right: 30px;
+}
+
+#navbar li {
+  margin: 0 0px;
+  list-style-type: none;
+}
+
+#navbar a {
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  transition: all 0.5s ease 0s;
+  color: var(--text-color);
+  letter-spacing: 1.3px;
+}
+
+#navbar a:hover {
+  color: var(--houver-color);
+  background-color: var(--houver-color-bg);
+}
+
+/* -- END NAV SECTION CSS -- */
+
+/* -- START WELCOME SECTION CSS -- */
+
+#welcome-section {
+  background-color: var(--bg-color-layout);
+  margin: 40px 0;
+  height: 700px;
+  width: 100%;
+}
+
+#welcome-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#welcome-socials {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  width: 27%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#container-socials {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25%;
+  border-radius: 20px;
+}
+
+#welcome-socials a {
+  display: flex;
+  flex-direction: row;
+  margin: 3px auto;
+  width: 70%;
+  padding: 20px;
+  text-align: left;
+  transition: all 0.6s ease 0s;
+  border-bottom: 1px solid var(--border);
+  letter-spacing: 1.4px;
+}
+
+#welcome-socials a:hover {
+  background-color: var(--houver-color-bg);
+  color: var(--houver-color);
+  font-weight: bold;
+  border-bottom: 5px solid black;
+  border-radius: 20px;
+}
+
+#welcome-socials i {
+  margin-right: 16px;
+  justify-content: flex-start;
+}
+
+#welcome-text {
+  padding: 10px;
+  width: 50%;
+  height: 96%;
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+#welcome-section span {
+  color: var(--span);
+  margin-left: 1px;
+}
+
+#welcome-section h1 {
+  margin-top: 20%;
+  margin-left: 10px;
+  font-size: 50px;
+  text-align: left;
+  letter-spacing: 4px;
+}
+
+#welcome-section h2 {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 38px;
+  text-align: left;
+  letter-spacing: 3px;
+}
+
+#welcome-section h3 {
+  text-align: left;
+  margin: 10px 30px;
+  letter-spacing: 3px;
+}
+
+#welcome-section h5 {
+  text-align: left;
+  margin: 30px 10px;
+  letter-spacing: 1.5px;
+}
+
+/* -- END WELCOME SECTION CSS -- */
+
+/* -- START PROJECT SECTION CSS -- */
+
+#projects {
+  display: block;
+  padding: 50px;
+  background-color: var(--bg-color-layout);
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 35px;
+  padding: 10px;
+  margin: 40px 0;
+  letter-spacing: 1.6px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 90%;
+  height: 90%;
+}
+
+#projects-grid {
+  background-color: var(--bg-color);
+  border-radius: 9px;
+  box-shadow: 3px 3px 5px 5px rgb(0, 0, 0);
+  height: 90%;
+  width: 70%;
+  padding: 20px;
+  margin: 15px auto;
+  text-align: left;
+}
+
+#projects-grid h3 {
+  font-size: 30px;
+  margin: 5px;
+  letter-spacing: 2px;
+}
+
+#projects-grid h4 {
+  margin-left: 5px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  letter-spacing: 1.3px;
+}
+
+#projects-grid h5 {
+  margin: 5px;
+  letter-spacing: 1.3px;
+}
+
+#projects-grid h6 {
+  margin: 5px;
+  font-size: 13px;
+  letter-spacing: 1.7px;
+}
+
+#projects-grid a {
+  margin: 20px 5px;
+}
+
+#projects-grid span {
+  color: var(--span);
+
+  transition: all 0.5s ease 0s;
+  padding: 13px;
+  width: 60px;
+}
+
+#projects-grid span:hover {
+  color: white;
+  border-radius: 8px;
+}
+
+/* -- END PROJECT SECTION CSS -- */
+
+/* -- START CONTACT SECTION CSS -- */
+
+#contact {
+  background-color: var(--bg-color-layout);
+  margin-top: 40px;
+}
+
+#contact-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0px;
+  width: 96%;
+  height: 400px;
+  justify-content: space-around;
+}
+
+#contact-text {
+  padding: 30px;
+}
+
+#contact-text h3 {
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 2.4px;
+}
+
+#contact-text h5 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+#contact-socials {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  height: 50%;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#contact-container a {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  font-size: 14px;
+  margin: auto 5px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.3s ease-in 0s;
+  border-bottom: 2px solid var(--border);
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+
+#contact-container a:hover {
+  background-color: white;
+  color: black;
+  padding: 23px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border-bottom: 5px solid black;
+}
+
+#contact-container i {
+  margin-right: 35px;
+}
+
+/* -- END CONTACT SECTION CSS -- */
+
+/* -- START FOOTER SECTION CSS -- */
+
+footer {
+  padding: 20px;
+  background-color: var(--bg-color);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* -- END FOOTER SECTION CSS -- */
+
+
+
+/* -- START MEDIA QUERY --  */
+
+@media (max-width: 900px) {
+
+     /* -- START NAVBAR SECTION -- */
+
+
+    #navbar p {
+        font-size: 14px;
+    }
+
+    #navbar ul {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    #navbar a {
+        padding: 4px;
+        width: 60px;
+    }
+
+    /* -- END NAVBAR SECTION -- */
+
+
+    /* -- START WELCOME SECTION -- */
+
+    #welcome-section {
+        height: 100%;
+        margin-top: 1px;
+    }
+
+    #welcome-text {
+        margin: 20px auto;
+        width: 96%;
+    }
+
+    #welcome-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #welcome-socials {
+        width: 96%;
+        margin-bottom: 20px;
+        background-color: transparent;
+    }
+
+    #container-socials {
+        margin: 10px auto;
+    }
+
+    #container-socials a {
+       width: 96%;
+      
+    }
+
+    /* -- END WELCOME SECTION -- */
+
+
+    /* -- START PROJECT SECTION -- */
+
+    #projects {
+        padding: 10px;
+    }
+
+    #container {
+        width: 100%;
+    }
+
+
+
+    /* -- END PROJECT SECTION -- */
+
+
+    /* -- START CONTACT SECTION -- */
+
+    #contact-container {
+        height: 90%;
+    }
+    #contact-socials {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact-socials a {
+        margin: 0 auto;
+    }
+
+        /* -- END CONTACT SECTION -- */
+
+
+}
+
+
+/* -- END MEDIA QUERY --  */
